@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%; /* Set width to 90% for better responsiveness */
+    max-width: 1200px; /* Maintain maximum width for larger screens */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+h1 {
+    color: #4CAF50; /* Main title color */
+    text-align: center; /* Center the main title */
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px; /* Space above section headers */
+    border-bottom: 2px solid #4CAF50; /* Underline for section headers */
+    padding-bottom: 5px; /* Space below the header */
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 30px; /* Space between forms */
+    padding: 15px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Light border around the form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for forms */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold; /* Bold labels for better readability */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+    width: 100%; /* Full width for input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    margin: 15px 5px; /* 10px top/bottom, 5px left/right */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Button Styles for Action Buttons */
+.view-btn {
+    background-color: #007BFF; /* Blue for View Project */
+}
+
+.edit-btn {
+    background-color: #28A745; /* Green for Edit */
+}
+
+.delete-btn {
+    background-color: #DC3545; /* Red for Delete */
+}
+
+/* Specific button hover effects */
+.view-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.edit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width for tables */
+    border-collapse: collapse; /* Collapse borders for cleaner look */
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    padding: 12px; /* Padding inside table cells */
+    text-align: left; /* Left-align text in cells */
+    border-bottom: 1px solid #ccc; /* Bottom border for rows */
+}
+
+th {
+    background-color: #f1f1f1; /* Light background for table headers */
+    color: #333; /* Header text color */
+    font-weight: bold; /* Bold headers */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Highlight row on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+    
+    button {
+        width: 100%; /* Full width for buttons on mobile */
+        margin: 10px 0; /* Stack buttons on mobile */
+    }
+}
+
+.wide-form {
+    max-width: 800px; /* Adjust this value for wider or narrower form */
+    margin: 0 auto; /* Center the form on the page */
+}
+
+.wide-form .form-group {
+    width: 100%; /* Ensures each form group takes the full width */
+}
+
+.wide-form input[type="text"],
+.wide-form input[type="email"],
+.wide-form input[type="date"],
+.wide-form input[type="number"],
+.wide-form select,
+.wide-form textarea {
+    width: 100%; /* Full width for input elements */
+    padding: 10px; /* Add some padding for comfort */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.wide-form button {
+    width: 100%; /* Make button full width */
+    padding: 10px; /* Add padding for comfort */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

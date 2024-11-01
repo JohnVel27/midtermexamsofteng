@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 20px; /* Add padding to the body */
+}
+
+h1 {
+    color: #333; /* Dark text color for the heading */
+    text-align: center; /* Center align the heading */
+}
+
+.container {
+    max-width: 600px; /* Set a max width for the form */
+    margin: 0 auto; /* Center the container */
+    background: #fff; /* White background for the form */
+    padding: 20px; /* Add padding to the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin: 10px 0 5px; /* Add margin to labels */
+    color: #555; /* Slightly lighter color for labels */
+}
+
+textarea, input[type="text"], input[type="date"], input[type="number"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Add padding to inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+button {
+    background-color: #28a745; /* Green background for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
